@@ -1,0 +1,19 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+   <ng-container *ngFor="let primarque of primarques">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{primarque.name}}</mat-card-title>
+          <img mat-card-avatar src="{{primarque.picture}}">
+        </mat-card-header>
+        <mat-card-content>
+          <p>Légion : {{primarque.legion}}</p>
+          <p>Allégeance : {{primarque.allegance}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" routerLink="./{{primarque.id}}">En savoir plus...</button>
+        </mat-card-actions>
+      </mat-card>
+  </mat-grid-tile>
+  </ng-container>
+</mat-grid-list>

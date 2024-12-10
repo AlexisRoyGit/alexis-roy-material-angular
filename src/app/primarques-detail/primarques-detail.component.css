@@ -1,0 +1,16 @@
+.image {
+  width: 300px;
+  height: 400px;
+  margin-left: 39%;
+}
+
+
+.center {
+  text-align : center;
+}
+
+
+button {
+   margin-left: 45%;
+   margin-top: 20px;
+}

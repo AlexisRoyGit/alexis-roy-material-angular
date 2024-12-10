@@ -1,0 +1,9 @@
+<ng-container *ngFor="let primark of primarque">
+    <h1 class="center">{{primark.name}}</h1>
+    <img src="{{primark.picture}}" class="image">
+    <p class="center"><strong>Légion</strong> : {{primark.legion}}</p>
+    <p class="center"><strong>Allégeance</strong> : {{primark.allegance}}</p>
+    <p class="center"><strong>Statut</strong> : {{primark.status}}</p>
+</ng-container>
+
+<button routerLink="../" mat-raised-button color="primary">Retour à la liste</button>
